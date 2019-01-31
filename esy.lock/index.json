@@ -1,0 +1,123 @@
+{
+  "checksum": "78537da5396c021d439d32a8917343ce",
+  "root": "repro1789@link-dev:./esy.json",
+  "node": {
+    "repro1789-lib@link:vendor/package-lib": {
+      "id": "repro1789-lib@link:vendor/package-lib",
+      "name": "repro1789-lib",
+      "version": "link:vendor/package-lib",
+      "source": { "type": "link", "path": "vendor/package-lib" },
+      "overrides": [],
+      "dependencies": [
+        "ocaml@4.7.1003@d41d8cd9", "@opam/dune@opam:1.6.3@a7d7baed"
+      ],
+      "devDependencies": []
+    },
+    "repro1789@link-dev:./esy.json": {
+      "id": "repro1789@link-dev:./esy.json",
+      "name": "repro1789",
+      "version": "link-dev:./esy.json",
+      "source": { "type": "link-dev", "path": ".", "manifest": "esy.json" },
+      "overrides": [],
+      "dependencies": [
+        "repro1789-lib@link:vendor/package-lib", "ocaml@4.7.1003@d41d8cd9",
+        "@opam/dune@opam:1.6.3@a7d7baed"
+      ],
+      "devDependencies": []
+    },
+    "ocaml@4.7.1003@d41d8cd9": {
+      "id": "ocaml@4.7.1003@d41d8cd9",
+      "name": "ocaml",
+      "version": "4.7.1003",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://registry.npmjs.org/ocaml/-/ocaml-4.7.1003.tgz#sha1:01bb355b8af7977543c9b8be5e21d81ba5fa6ad7"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    },
+    "@opam/dune@opam:1.6.3@a7d7baed": {
+      "id": "@opam/dune@opam:1.6.3@a7d7baed",
+      "name": "@opam/dune",
+      "version": "opam:1.6.3",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://opam.ocaml.org/cache/md5/12/1212a36547d25269675d767c38fecf5f#md5:1212a36547d25269675d767c38fecf5f",
+          "archive:https://github.com/ocaml/dune/releases/download/1.6.3/dune-1.6.3.tbz#md5:1212a36547d25269675d767c38fecf5f"
+        ],
+        "opam": {
+          "name": "dune",
+          "version": "1.6.3",
+          "path": "esy.lock/opam/dune.1.6.3"
+        }
+      },
+      "overrides": [
+        {
+          "opamoverride":
+            "esy.lock/overrides/opam__s__dune_opam__c__1.6.3_opam_override"
+        }
+      ],
+      "dependencies": [
+        "ocaml@4.7.1003@d41d8cd9", "@opam/base-unix@opam:base@87d0b2eb",
+        "@opam/base-threads@opam:base@36803084",
+        "@esy-ocaml/substs@0.0.1@d41d8cd9"
+      ],
+      "devDependencies": [
+        "ocaml@4.7.1003@d41d8cd9", "@opam/base-unix@opam:base@87d0b2eb",
+        "@opam/base-threads@opam:base@36803084"
+      ]
+    },
+    "@opam/base-unix@opam:base@87d0b2eb": {
+      "id": "@opam/base-unix@opam:base@87d0b2eb",
+      "name": "@opam/base-unix",
+      "version": "opam:base",
+      "source": {
+        "type": "install",
+        "source": [ "no-source:" ],
+        "opam": {
+          "name": "base-unix",
+          "version": "base",
+          "path": "esy.lock/opam/base-unix.base"
+        }
+      },
+      "overrides": [],
+      "dependencies": [ "@esy-ocaml/substs@0.0.1@d41d8cd9" ],
+      "devDependencies": []
+    },
+    "@opam/base-threads@opam:base@36803084": {
+      "id": "@opam/base-threads@opam:base@36803084",
+      "name": "@opam/base-threads",
+      "version": "opam:base",
+      "source": {
+        "type": "install",
+        "source": [ "no-source:" ],
+        "opam": {
+          "name": "base-threads",
+          "version": "base",
+          "path": "esy.lock/opam/base-threads.base"
+        }
+      },
+      "overrides": [],
+      "dependencies": [ "@esy-ocaml/substs@0.0.1@d41d8cd9" ],
+      "devDependencies": []
+    },
+    "@esy-ocaml/substs@0.0.1@d41d8cd9": {
+      "id": "@esy-ocaml/substs@0.0.1@d41d8cd9",
+      "name": "@esy-ocaml/substs",
+      "version": "0.0.1",
+      "source": {
+        "type": "install",
+        "source": [
+          "archive:https://registry.npmjs.org/@esy-ocaml/substs/-/substs-0.0.1.tgz#sha1:59ebdbbaedcda123fc7ed8fb2b302b7d819e9a46"
+        ]
+      },
+      "overrides": [],
+      "dependencies": [],
+      "devDependencies": []
+    }
+  }
+}

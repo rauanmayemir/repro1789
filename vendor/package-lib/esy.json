@@ -1,0 +1,11 @@
+{
+  "name": "repro1789-lib",
+  "version": "0.1.0",
+  "esy": {
+    "build": ["dune build -p repro1789-lib"]
+  },
+  "dependencies": {
+    "@opam/dune": "^1.6.3",
+    "ocaml": "~4.7.1000"
+  }
+}

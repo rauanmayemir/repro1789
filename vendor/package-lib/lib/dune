@@ -1,0 +1,6 @@
+(library
+ (name repro1789_lib)
+ (public_name repro1789-lib)
+ (modules foo)
+ (install_c_headers message)
+ (c_names message stub))

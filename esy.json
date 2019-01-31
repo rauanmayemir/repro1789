@@ -1,0 +1,18 @@
+{
+  "name": "repro1789",
+  "version": "0.1.0",
+  "esy": {
+    "build": ["dune build -p repro1789"]
+  },
+  "scripts": {
+    "run": "esy x repro1789"
+  },
+  "dependencies": {
+    "@opam/dune": "^1.6.3",
+    "repro1789-lib": "*",
+    "ocaml": "~4.7.1000"
+  },
+  "resolutions": {
+    "repro1789-lib": "link:./vendor/package-lib"
+  }
+}

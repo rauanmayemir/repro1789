@@ -1,0 +1,12 @@
+(executable
+ (name main)
+ (public_name repro1789)
+ (modules main)
+ (libraries repro1789-lib)
+;  (modes object)
+ )
+
+; (install
+;   (package repro1789)
+;   (section bin)
+;   (files (main.exe.o as main.o)))
